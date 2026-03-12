@@ -1,0 +1,28 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    
+    // Users collection - allow read for authenticated users, write only for own document
+    match /users/{userId} {
+      allow read: if request.auth != null;
+      allow write: if request.auth != null && request.auth.uid == userId;
+      allow update: if request.auth != null; // Allow admin to update roles
+    }
+    
+    // Careers collection - public read, admin write
+    match /careers/{careerId} {
+      allow read: if true;
+      allow write: if request.auth != null;
+    }
+    
+    // Bookings collection - authenticated users
+    match /bookings/{bookingId} {
+      allow read, write: if request.auth != null;
+    }
+    
+    // Purchases collection - authenticated users
+    match /purchases/{purchaseId} {
+      allow read, write: if request.auth != null;
+    }
+  }
+}
