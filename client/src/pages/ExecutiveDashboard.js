@@ -6,7 +6,7 @@ import { FaCalendar, FaUsers, FaVideo, FaChartLine, FaRoad, FaTimes, FaRobot } f
 import CareerChatbot from '../components/CareerChatbot';
 
 const ExecutiveDashboard = () => {
-  const { userProfile, currentUser } = useAuth();
+  const { userProfile } = useAuth();
   const [consultations, setConsultations] = useState([]);
   const [careers, setCareers] = useState([]);
   const [loading, setLoading] = useState(true);

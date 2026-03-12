@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useAuth } from '../context/AuthContext';
 import { collection, query, where, getDocs } from 'firebase/firestore';
 import { db } from '../config/firebase';
-import { FaVideo, FaUsers, FaStar, FaChartLine } from 'react-icons/fa';
+import { FaVideo, FaUsers, FaStar } from 'react-icons/fa';
 
 const ExpertDashboard = () => {
   const { userProfile } = useAuth();

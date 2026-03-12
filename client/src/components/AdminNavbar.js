@@ -4,7 +4,7 @@ import { useAuth } from '../context/AuthContext';
 import { FaUserShield } from 'react-icons/fa';
 
 const AdminNavbar = () => {
-  const { currentUser, logout, userProfile } = useAuth();
+  const { logout, userProfile } = useAuth();
   const navigate = useNavigate();
 
   const handleLogout = async () => {

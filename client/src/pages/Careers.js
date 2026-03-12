@@ -24,6 +24,7 @@ const Careers = () => {
     if (currentUser) {
       fetchPurchases();
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [currentUser]);
 
   const fetchPurchases = async () => {

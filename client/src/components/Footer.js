@@ -13,16 +13,16 @@ const Footer = () => {
             </h3>
             <p className="text-gray-300 mb-4">Empowering students to explore diverse career paths beyond traditional choices.</p>
             <div className="flex space-x-4">
-              <a href="#" className="text-2xl hover:text-blue-300 transition-colors duration-300 hover:scale-110 transform">
+              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-2xl hover:text-blue-300 transition-colors duration-300 hover:scale-110 transform">
                 <FaFacebook />
               </a>
-              <a href="#" className="text-2xl hover:text-blue-300 transition-colors duration-300 hover:scale-110 transform">
+              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-2xl hover:text-blue-300 transition-colors duration-300 hover:scale-110 transform">
                 <FaTwitter />
               </a>
-              <a href="#" className="text-2xl hover:text-blue-300 transition-colors duration-300 hover:scale-110 transform">
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-2xl hover:text-blue-300 transition-colors duration-300 hover:scale-110 transform">
                 <FaInstagram />
               </a>
-              <a href="#" className="text-2xl hover:text-blue-300 transition-colors duration-300 hover:scale-110 transform">
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-2xl hover:text-blue-300 transition-colors duration-300 hover:scale-110 transform">
                 <FaLinkedin />
               </a>
             </div>

@@ -17,6 +17,7 @@ const Dashboard = () => {
 
   useEffect(() => {
     fetchUserData();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [currentUser]);
 
   const fetchUserData = async () => {
